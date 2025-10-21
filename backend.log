@@ -1,0 +1,145 @@
+
+> srm-backend@1.0.0 start
+> node dist/index.js
+
+Server running on port 8010
+WebSocket server running on port 3002
+Database query error {
+  text: 'SELECT * FROM service_requests ORDER BY created_at DESC',
+  error: error: role "postgres" does not exist
+      at /Users/aibyml.com.hk/AIServicePlatform/backend/node_modules/pg-pool/index.js:45:11
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async DatabaseConnection.query (/Users/aibyml.com.hk/AIServicePlatform/backend/dist/database/connection.js:36:25)
+      at async ServiceRequestRepository.findAll (/Users/aibyml.com.hk/AIServicePlatform/backend/dist/services/repositories/service-request-repository.js:46:24)
+      at async ServiceRequestController.getAllRequests (/Users/aibyml.com.hk/AIServicePlatform/backend/dist/controllers/service-request-controller.js:49:30) {
+    length: 100,
+    severity: 'FATAL',
+    code: '28000',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'miscinit.c',
+    line: '755',
+    routine: 'InitializeSessionUserId'
+  }
+}
+Database query error {
+  text: 'SELECT * FROM service_requests ORDER BY created_at DESC',
+  error: error: role "postgres" does not exist
+      at /Users/aibyml.com.hk/AIServicePlatform/backend/node_modules/pg-pool/index.js:45:11
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async DatabaseConnection.query (/Users/aibyml.com.hk/AIServicePlatform/backend/dist/database/connection.js:36:25)
+      at async ServiceRequestRepository.findAll (/Users/aibyml.com.hk/AIServicePlatform/backend/dist/services/repositories/service-request-repository.js:46:24)
+      at async ServiceRequestController.getAllRequests (/Users/aibyml.com.hk/AIServicePlatform/backend/dist/controllers/service-request-controller.js:49:30) {
+    length: 100,
+    severity: 'FATAL',
+    code: '28000',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'miscinit.c',
+    line: '755',
+    routine: 'InitializeSessionUserId'
+  }
+}
+Database query error {
+  text: 'SELECT * FROM service_requests ORDER BY created_at DESC',
+  error: error: role "postgres" does not exist
+      at /Users/aibyml.com.hk/AIServicePlatform/backend/node_modules/pg-pool/index.js:45:11
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async DatabaseConnection.query (/Users/aibyml.com.hk/AIServicePlatform/backend/dist/database/connection.js:36:25)
+      at async ServiceRequestRepository.findAll (/Users/aibyml.com.hk/AIServicePlatform/backend/dist/services/repositories/service-request-repository.js:46:24)
+      at async ServiceRequestController.getAllRequests (/Users/aibyml.com.hk/AIServicePlatform/backend/dist/controllers/service-request-controller.js:49:30) {
+    length: 100,
+    severity: 'FATAL',
+    code: '28000',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'miscinit.c',
+    line: '755',
+    routine: 'InitializeSessionUserId'
+  }
+}
+Database query error {
+  text: 'SELECT * FROM service_requests ORDER BY created_at DESC',
+  error: error: role "postgres" does not exist
+      at /Users/aibyml.com.hk/AIServicePlatform/backend/node_modules/pg-pool/index.js:45:11
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async DatabaseConnection.query (/Users/aibyml.com.hk/AIServicePlatform/backend/dist/database/connection.js:36:25)
+      at async ServiceRequestRepository.findAll (/Users/aibyml.com.hk/AIServicePlatform/backend/dist/services/repositories/service-request-repository.js:46:24)
+      at async ServiceRequestController.getAllRequests (/Users/aibyml.com.hk/AIServicePlatform/backend/dist/controllers/service-request-controller.js:49:30) {
+    length: 100,
+    severity: 'FATAL',
+    code: '28000',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'miscinit.c',
+    line: '755',
+    routine: 'InitializeSessionUserId'
+  }
+}
+Database query error {
+  text: 'SELECT * FROM service_requests ORDER BY created_at DESC',
+  error: error: role "postgres" does not exist
+      at /Users/aibyml.com.hk/AIServicePlatform/backend/node_modules/pg-pool/index.js:45:11
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async DatabaseConnection.query (/Users/aibyml.com.hk/AIServicePlatform/backend/dist/database/connection.js:36:25)
+      at async ServiceRequestRepository.findAll (/Users/aibyml.com.hk/AIServicePlatform/backend/dist/services/repositories/service-request-repository.js:46:24)
+      at async ServiceRequestController.getAllRequests (/Users/aibyml.com.hk/AIServicePlatform/backend/dist/controllers/service-request-controller.js:49:30) {
+    length: 100,
+    severity: 'FATAL',
+    code: '28000',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'miscinit.c',
+    line: '755',
+    routine: 'InitializeSessionUserId'
+  }
+}
+New WebSocket connection established
+WebSocket connection closed
+New WebSocket connection established
+WebSocket connection closed

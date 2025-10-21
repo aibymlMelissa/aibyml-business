@@ -1,0 +1,93 @@
+
+> package.json@0.0.0 dev
+> vite
+
+
+  VITE v7.1.4  ready in 59 ms
+
+  ➜  Local:   http://localhost:3002/
+  ➜  Network: use --host to expose
+11:45:46 PM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+11:46:48 PM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+11:49:03 PM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+11:51:07 PM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+11:51:17 PM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+11:53:34 PM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+12:17:08 AM [vite] (client) hmr update /src/components/Dashboard.tsx, /src/index.css
+12:17:08 AM [vite] (client) page reload index.html
+1:02:43 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+1:03:33 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+1:06:35 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+1:07:49 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+5:52:34 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+5:53:30 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+5:54:45 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+5:57:05 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+5:59:35 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+5:59:50 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+6:01:47 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+6:05:16 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+6:05:48 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+6:07:44 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+6:13:51 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+6:17:36 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+6:20:30 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+6:24:09 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+6:24:25 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+6:24:54 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+6:29:01 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+6:31:00 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+6:32:23 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+6:33:06 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+6:36:10 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+6:38:53 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+6:40:50 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+6:41:37 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+6:43:41 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+6:45:52 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+6:46:41 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+6:47:36 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+6:48:54 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+6:50:47 AM [vite] (client) hmr update /src/components/Landing.tsx, /src/index.css
+7:23:20 AM [vite] vite.config.ts changed, restarting server...
+7:23:20 AM [vite] server restarted.
+8:36:53 AM [vite] (client) page reload index.html
+8:36:53 AM [vite] changed tsconfig file detected: /Users/aibyml.com.hk/AIServicePlatform/frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+8:36:53 AM [vite] vite.config.ts changed, restarting server...
+8:36:53 AM [vite] (client) Re-optimizing dependencies because lockfile has changed
+8:36:53 AM [vite] server restarted.
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+8:36:53 AM [vite] (client) page reload index.html
+8:36:53 AM [vite] changed tsconfig file detected: /Users/aibyml.com.hk/AIServicePlatform/frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+9:14:06 AM [vite] changed tsconfig file detected: /Users/aibyml.com.hk/AIServicePlatform/frontend/backend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+9:14:06 AM [vite] (client) page reload frontend/dist/index.html
+9:14:06 AM [vite] (client) page reload frontend/index.html
+9:14:06 AM [vite] changed tsconfig file detected: /Users/aibyml.com.hk/AIServicePlatform/frontend/frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+9:14:06 AM [vite] (client) page reload index.html
+9:14:06 AM [vite] changed tsconfig file detected: /Users/aibyml.com.hk/AIServicePlatform/frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+9:14:15 AM [vite] changed tsconfig file detected: /Users/aibyml.com.hk/AIServicePlatform/frontend/backend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+9:14:15 AM [vite] changed tsconfig file detected: /Users/aibyml.com.hk/AIServicePlatform/frontend/backend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+9:14:15 AM [vite] (client) page reload frontend/dist/index.html
+9:14:15 AM [vite] (client) page reload frontend/dist/index.html
+9:14:15 AM [vite] (client) page reload frontend/index.html
+9:14:15 AM [vite] changed tsconfig file detected: /Users/aibyml.com.hk/AIServicePlatform/frontend/frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+9:14:15 AM [vite] (client) page reload index.html
+9:14:15 AM [vite] changed tsconfig file detected: /Users/aibyml.com.hk/AIServicePlatform/frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+9:21:43 AM [vite] (client) page reload index.html
+9:51:27 AM [vite] changed tsconfig file detected: /Users/aibyml.com.hk/AIServicePlatform/frontend/frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+9:51:27 AM [vite] (client) page reload frontend/dist/index.html
+9:51:27 AM [vite] (client) page reload frontend/index.html
+9:51:40 AM [vite] (client) page reload frontend/index.html
+9:51:40 AM [vite] changed tsconfig file detected: /Users/aibyml.com.hk/AIServicePlatform/frontend/frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+9:51:40 AM [vite] (client) page reload frontend/dist/index.html
+9:51:52 AM [vite] changed tsconfig file detected: /Users/aibyml.com.hk/AIServicePlatform/frontend/frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+9:51:52 AM [vite] (client) page reload frontend/dist/index.html
+9:51:52 AM [vite] (client) page reload frontend/index.html
+10:03:27 AM [vite] (client) page reload index.html
+10:03:27 AM [vite] changed tsconfig file detected: /Users/aibyml.com.hk/AIServicePlatform/frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+10:03:32 AM [vite] (client) page reload index.html
+10:03:32 AM [vite] changed tsconfig file detected: /Users/aibyml.com.hk/AIServicePlatform/frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+10:22:20 AM [vite] changed tsconfig file detected: /Users/aibyml.com.hk/AIServicePlatform/frontend/backend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+10:22:20 AM [vite] changed tsconfig file detected: /Users/aibyml.com.hk/AIServicePlatform/frontend/future-development/backend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
