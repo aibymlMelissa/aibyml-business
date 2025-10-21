@@ -5,7 +5,7 @@
 
 import React, { useState } from 'react';
 import { Plus, Trash2, ChevronDown, X } from 'lucide-react';
-import { URLGroup } from '../types';
+import type { URLGroup } from '../../types/chatbot';
 
 interface KnowledgeBaseManagerProps {
   urls: string[];

@@ -6,12 +6,12 @@
 import React from 'react';
 import { marked } from 'marked';
 import hljs from 'highlight.js';
-import type { ChatMessage, UrlContextMetadataItem } from '../../types/chatbot';
+import type { ChatMessage } from '../../types/chatbot';
 import { MessageSender } from '../../types/chatbot';
 
 // Configure marked to use highlight.js for syntax highlighting
 marked.setOptions({
-  highlight: function(code, lang) {
+  highlight: function(code: string, lang: string) {
     const language = hljs.getLanguage(lang) ? lang : 'plaintext';
     return hljs.highlight(code, { language }).value;
   },

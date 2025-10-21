@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import type { ChatMessage } from '../types/chatbot';
 import { MessageSender } from '../types/chatbot';
 import { generateContentWithUrlContext } from '../services/geminiService';

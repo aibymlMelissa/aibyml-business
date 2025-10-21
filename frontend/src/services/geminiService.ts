@@ -79,7 +79,7 @@ export const generateContentWithUrlContext = async (
       // console.log("No urlContextMetadata found in the Gemini API response candidate.");
     }
     
-    return { text, urlContextMetadata: extractedUrlContextMetadata };
+    return { text: text || "", urlContextMetadata: extractedUrlContextMetadata };
 
   } catch (error) {
     console.error("Error calling Gemini API:", error);
@@ -127,10 +127,10 @@ ${urlList}`;
       },
     });
 
-    const text = response.text; // This should be the JSON string
+    const text = response.text || ""; // This should be the JSON string
     // urlContextMetadata is not expected here because tools cannot be used with responseMimeType: "application/json"
     // const urlContextMetadata = response.candidates?.[0]?.urlContextMetadata?.urlMetadata as UrlContextMetadataItem[] | undefined;
-    
+
     return { text /*, urlContextMetadata: undefined */ }; // Explicitly undefined or not included
 
   } catch (error) {
