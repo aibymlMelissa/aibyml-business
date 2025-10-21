@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import {
   Sparkles,
@@ -15,8 +16,18 @@ import {
   Linkedin,
   ChevronDown,
 } from 'lucide-react';
+import AIChatBot from './AIChatBot';
+import ServiceRequestForm from './ServiceRequestForm';
 
-const Landing = () => {
+interface LandingProps {
+  onNavigateToSubscription: () => void;
+}
+
+const Landing: React.FC<LandingProps> = ({ onNavigateToSubscription }) => {
+  const [isChatOpen, setIsChatOpen] = useState(false);
+  const [isCustomerServiceChatOpen, setIsCustomerServiceChatOpen] = useState(false);
+  const [isServiceRequestOpen, setIsServiceRequestOpen] = useState(false);
+
   // Smooth scroll to section
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -86,12 +97,24 @@ const Landing = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
-              className="flex items-center space-x-3"
+              className="flex items-center space-x-4"
             >
-              <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center shadow-lg">
-                <Sparkles className="w-6 h-6 text-blue-600" />
+              <div className="flex items-center space-x-3">
+                <div className="w-20 h-20 md:w-24 md:h-24">
+                  <img src="/AIbyML_Logo.png?v=6" alt="AIbyML Logo" className="w-full h-full object-contain" />
+                </div>
+                <div className="flex flex-col space-y-1">
+                  <a
+                    href="https://www.aibyml.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm md:text-base font-semibold text-white/90 hover:text-white transition-colors cursor-pointer"
+                  >
+                    AIbyML.com
+                  </a>
+                  <h2 className="text-xl md:text-2xl font-bold text-white">AI Service Platform</h2>
+                </div>
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-white">AIbyML AI Service Platform</h2>
             </motion.div>
 
             <motion.div
@@ -104,7 +127,7 @@ const Landing = () => {
                 AI Service Types
               </a>
               <a href="#how-it-works" className="hover:text-blue-200 transition-colors">
-                How to Subscribe
+                How It Works
               </a>
               <a href="#about" className="hover:text-blue-200 transition-colors">
                 About
@@ -117,10 +140,15 @@ const Landing = () => {
               transition={{ delay: 0.5 }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => scrollToSection('contact')}
-              className="px-6 py-2 bg-white text-blue-600 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+              onClick={() => setIsChatOpen(true)}
+              className="flex items-center gap-2 px-4 py-2 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              Get Started
+              <img
+                src="/chaticon_2.JPG"
+                alt="Chat"
+                className="w-16 h-16 object-contain"
+              />
+              <span className="text-blue-600 font-semibold">Let's Chat</span>
             </motion.button>
           </div>
         </motion.nav>
@@ -168,15 +196,15 @@ const Landing = () => {
                     AI-Powered Customer Services
                   </h3>
                   <h4 className="text-base md:text-lg text-blue-100 leading-relaxed mb-4 font-normal">
-                    Instant classification, smart routing, and real-time tracking in one platform.
+                    Instant classification, smart routing, quick response and real-time tracking in one platform.
                   </h4>
                   <motion.button
                     whileHover={{ scale: 1.05, boxShadow: '0 20px 40px rgba(0,0,0,0.3)' }}
                     whileTap={{ scale: 0.95 }}
-                    onClick={() => scrollToSection('contact')}
+                    onClick={() => setIsServiceRequestOpen(true)}
                     className="px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 inline-flex items-center space-x-2"
                   >
-                    <span>Learn More</span>
+                    <span>Submit Request</span>
                     <ArrowRight className="w-5 h-5" />
                   </motion.button>
                 </motion.div>
@@ -527,11 +555,11 @@ const Landing = () => {
             <motion.button
               whileHover={{ scale: 1.05, boxShadow: '0 20px 40px rgba(0,0,0,0.3)' }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => scrollToSection('contact')}
+              onClick={onNavigateToSubscription}
               className="px-8 py-4 bg-white text-blue-600 rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 inline-flex items-center justify-center space-x-2"
             >
               <MessageSquare className="w-5 h-5" />
-              <span>Get Started Free</span>
+              <span>Sign up Free Subscription</span>
               <ArrowRight className="w-5 h-5" />
             </motion.button>
           </div>
@@ -564,7 +592,7 @@ const Landing = () => {
             className="text-center mb-12"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Get Started Today
+              Talk to Us Directly
             </h2>
             <p className="text-xl text-gray-600">
               Fill out the form below and our team will get in touch with you shortly
@@ -646,10 +674,11 @@ const Landing = () => {
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
                 >
                   <option value="">Select a service...</option>
-                  <option value="customized">Customized AI Services</option>
-                  <option value="customer-service">AI-Powered Customer Services</option>
-                  <option value="both">Both Services</option>
+                  <option value="build-private-ai">Build Private AI</option>
                   <option value="consultation">General Consultation</option>
+                  <option value="maintain-ai">Maintain AI Services</option>
+                  <option value="managing-intelligence">Managing Intelligence Services</option>
+                  <option value="standard-customized">Standard or Customized AI Services</option>
                 </select>
               </div>
 
@@ -759,6 +788,47 @@ const Landing = () => {
           </div>
         </div>
       </footer>
+
+      {/* Floating Chat Button */}
+      <motion.button
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ delay: 1, duration: 0.5 }}
+        onClick={() => setIsChatOpen(true)}
+        className="fixed bottom-8 right-8 w-20 h-20 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform duration-300 z-40 group overflow-hidden"
+        aria-label="Open AI Chat Assistant"
+      >
+        <img
+          src="/chaticon_1.JPG"
+          alt="Chat with us"
+          className="w-full h-full object-cover"
+        />
+        <span className="absolute -top-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white"></span>
+      </motion.button>
+
+      {/* Mary - AI Service Assistant (General inquiries) */}
+      <AIChatBot
+        isOpen={isChatOpen}
+        onClose={() => setIsChatOpen(false)}
+        mode="general"
+      />
+
+      {/* John - AI Customer Service Manager (For subscribers) */}
+      <AIChatBot
+        isOpen={isCustomerServiceChatOpen}
+        onClose={() => setIsCustomerServiceChatOpen(false)}
+        mode="customer-service"
+      />
+
+      {/* Service Request Form */}
+      <ServiceRequestForm
+        isOpen={isServiceRequestOpen}
+        onClose={() => setIsServiceRequestOpen(false)}
+        onOpenChat={() => {
+          setIsServiceRequestOpen(false);
+          setIsCustomerServiceChatOpen(true);
+        }}
+      />
     </div>
   );
 };
